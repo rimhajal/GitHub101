@@ -1,0 +1,10 @@
+OmicCircos
+ggplot2
+kdensity
+heatmaply
+dplyr
+viridis
+hrbrthemes
+viridisLite
+circlize
+ComplexHeatmap
