@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-# Présentation du workshop
+# Introduction
 
 Dans cet atelier, nous explorerons les fondamentaux de GitHub, une plateforme essentielle pour la collaboration et la gestion de projets logiciels. Destiné aux débutants, cet atelier vous guidera à travers les concepts clés de Git et GitHub, y compris la création et la gestion de dépôts, le suivi des modifications de code, l'utilisation des branches, la gestion des pull requests et la résolution des conflits. Vous apprendrez également à naviguer dans l'interface GitHub, à collaborer avec d'autres développeurs et à exploiter les fonctionnalités avancées pour optimiser votre flux de travail. Que vous soyez un développeur novice ou simplement curieux d'en savoir plus sur cette plateforme incontournable, cet atelier vous fournira les compétences nécessaires pour démarrer avec GitHub et améliorer votre productivité dans le développement logiciel.
 
@@ -58,11 +58,15 @@ Ceci peut se faire directement sur le site de GitHub, ou bien dans le terminal.
 
 Cliquez sur votre profile en premier. Dans la barre "Dépôts" vous trouverez une option "nouveau" comme ci-dessous:
 
+<br>
 ![](./images/new-repo.png)
+<br>
 
 En cliquant dessus, une nouvelle fenêtre s'ouvre:
 
+<br>
 ![](./images/depot.png)
+<br>
 
 Félicitations, vous avez créez votre premier dépôt !
 
@@ -81,7 +85,9 @@ Le dépôt est créer mais il est vide. Voyons maintenant comment le modifier.
 Si le dépôt exite déjà, alors il s'agit de "cloner" le dépôt sur votre machine en premier. 
 Pour ce faire, il faut copier le lien d'abord qui se trouve sur la page Git du dépôt:
 
+<br>
 ![](./images/lien.png)
+<br>
 
 Ensuite, dans le terminal:
 
@@ -115,6 +121,7 @@ git push origin my-new-branch
 ```
 
 Maintenant sur le dépôt vous verrez l'option de créer un "pull request". 
+
 Le reste du tuto sera en présentiel.
 
 
