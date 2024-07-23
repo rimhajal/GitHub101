@@ -115,6 +115,6 @@ git push origin my-new-branch
 ```
 
 Maintenant sur le dépôt vous verrez l'option de créer un "pull request". 
-Le reste du tuto se fera en présentiel.
+Le reste du tuto sera en présentiel.
 
 
