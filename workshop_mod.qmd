@@ -17,3 +17,29 @@ Créer votre compte personnel sur [***GitHub***](https://github.com/) et vérifi
 
 ## Installation
 
+Avant de commencer à utiliser Git, il faut qu’il soit disponible sur votre ordinateur. 
+Suivez les instructions [ici](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git) pour installer Git (si ce n'est pas déjà fait).
+
+# Connecter vous depuis votre machine
+
+Ouvrir le terminal Git Bash et taper la commande suivante:
+
+```
+git config --global user.name "User Name"
+```
+
+Cette commande vous permet de définir votre nom d'utilisateur Git pour chaque dépôt sur votre ordinateur.
+
+# Création d'un dépôt
+
+Ceci peut se faire directement sur le site de GitHub, ou bien dans le terminal.
+
+## À travers le site
+
+Cliquez sur votre profile en premier. Dans la barre "Dépôts" vous trouverez une option "nouveau" comme ci-dessous:
+
+![](./images/new-repo.png)
+
+
+
+
