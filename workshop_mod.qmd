@@ -30,6 +30,26 @@ git config --global user.name "User Name"
 
 Cette commande vous permet de définir votre nom d'utilisateur Git pour chaque dépôt sur votre ordinateur.
 
+# Commandes de base 
+
+- `git init` initialise un tout nouveau dépôt Git et commence à suivre un répertoire existant. Elle ajoute un sous-dossier masqué dans le répertoire existant qui héberge la structure de données interne requise pour la gestion de versions.
+
+- `git clone` crée une copie locale d’un projet qui existe déjà à distance. Le clone inclut tous les fichiers, l’historique et les branches du projet.
+
+- `git add` indexe un changement. Git effectue le suivi des modifications apportées au codebase d’un développeur, mais il est nécessaire d’indexer et de prendre un instantané des modifications pour les inclure dans l’historique du projet. Cette commande effectue l’indexation, la première partie de ce processus en deux étapes. Toutes les modifications qui sont indexées feront partie de l’instantané suivant et de l’historique du projet. L’indexation et le commit donnent séparément aux développeurs un contrôle complet sur l’historique de leur projet sans modifier la façon dont ils codent et travaillent.
+
+- `git commit` enregistre l’instantané dans l’historique du projet et termine le processus de suivi des modifications. En bref, un commit fonctionne comme la prise d’une photo. Tout ce qui a été indexé avec git add fera partie de l’instantané avec git commit.
+
+- `git status` affiche l’état des modifications comme non suivies, modifiées ou indexées.
+
+- `git branch` montre les branches en cours de traitement localement.
+
+- `git merge` fusionne les lignes de développement. Cette commande est généralement utilisée pour combiner les modifications apportées sur deux branches distinctes. Par exemple, un développeur fusionne quand il souhaite combiner les modifications d’une branche de fonctionnalité dans la branche principale pour le déploiement.
+
+- `git pull` met à jour la ligne de développement locale avec les mises à jour de son équivalent distant. Les développeurs utilisent cette commande si un collègue a effectué des commits sur une branche d’un dépôt distant et qu’ils souhaitent refléter ces modifications dans leur environnement local.
+
+- `git push` met à jour le dépôt distant avec les commits effectués localement sur une branche.
+
 # Création d'un dépôt
 
 Ceci peut se faire directement sur le site de GitHub, ou bien dans le terminal.
@@ -43,5 +63,58 @@ Cliquez sur votre profile en premier. Dans la barre "Dépôts" vous trouverez un
 En cliquant dessus, une nouvelle fenêtre s'ouvre:
 
 ![](./images/depot.png)
+
+Félicitations, vous avez créez votre premier dépôt !
+
+## Dans le terminal
+
+Allez dans le terminal Git Bash et tapez la commande suivante:
+
+```
+git init my-first-repo
+```
+
+Le dépôt est créer mais il est vide. Voyons maintenant comment le modifier. 
+
+# Modifier / Contribuer à un dépôt existant
+
+Si le dépôt exite déjà, alors il s'agit de "cloner" le dépôt sur votre machine en premier. 
+Pour ce faire, il faut copier le lien d'abord qui se trouve sur la page Git du dépôt:
+
+![](./images/lien.png)
+
+Ensuite, dans le terminal:
+
+```
+git clone https://github.com/rimhajal/GitHub101.git
+```
+
+::: {.callout-important appearance="simple"}
+Assurez vous bien que vous cloner le fichier dans le bon endroit.
+:::
+
+Placer vous dans le fichier avec la commande:
+
+```
+cd GitHub101
+```
+
+Placer vous sur une branche où votre travail ne changera pas le code initial par la commande:
+
+```
+git checkout -b my-new-branch
+```
+
+Modifier les fichiers "test1.r" et "test2.r" comme il vous semble. 
+Ensuite, taper les commandes suivantes:
+
+```
+git add test1.r test2.r
+git commit -m "Modification"
+git push origin my-new-branch
+```
+
+Maintenant sur le dépôt vous verrez l'option de créer un "pull request". 
+Le reste du tuto se fera en présentiel.
 
 
