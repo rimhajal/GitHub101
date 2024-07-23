@@ -40,6 +40,8 @@ Cliquez sur votre profile en premier. Dans la barre "Dépôts" vous trouverez un
 
 ![](./images/new-repo.png)
 
+En cliquant dessus, une nouvelle fenêtre s'ouvre:
 
+![](./images/depot.png)
 
 
